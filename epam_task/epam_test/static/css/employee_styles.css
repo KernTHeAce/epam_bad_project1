@@ -1,0 +1,79 @@
+.employee {
+    background-color: rgba(152, 193, 217, 0.30);
+}
+
+.button_group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.find_button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #3D5A80;
+    margin: 0px 100px 0px 30px;
+}
+
+
+.filter_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D5A80;
+}
+
+.add_button {
+    position: relative;
+}
+
+.add_button::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 28px;
+    background-color: #FFFFFF;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.employees_table {
+    height: 628px;
+    display: block;
+    overflow: auto;
+}
+
+.row:first-child {
+    border-top: 0px;
+}
+
+.clmn_id {
+    
+    width: 167px;
+}
+
+.clmn_name {
+    
+    width: 459px;
+}
+
+.clmn_department {
+   
+    width: 473px;
+}
+
+.clmn_birth_date {
+    
+    width: 297px;
+}
+
+.clmn_salary {
+    
+    width: 199px;
+}
+
+
+

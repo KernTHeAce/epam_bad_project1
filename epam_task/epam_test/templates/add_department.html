@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/forms_styles.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="wrapper dep">
+    <div class="form">
+        <form method="post">
+            <div class="form_wrapper">
+                <div class="title">Adding Department</div>
+                <div class="inputs">
+                    {% csrf_token %}
+                    {{ form.department_name }}
+                </div>
+
+                <div class="buttons">
+                    <div><input class="button dep_button add_button" type="submit" value="Save"></div>
+                    <div class="button dep_button cancel_button"><a href="../" class="button">Back</a></div>
+                </div>
+            </div>
+        </form>
+        <span>{{ error }}</span>
+        {% endblock %}
+    </div>
+</div>

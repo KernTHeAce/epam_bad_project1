@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/forms_styles.css' %}" />
+{% endblock %}
+
+{% block content %}
+<div class="wrapper empl">
+    <div class="form">
+        <form method="post">
+            <div class="form_wrapper">
+                <div class="title">Adding Employee</div>
+                <div class="inputs">
+                    {% csrf_token %}
+                    {{ form.name }}
+                    {{ form.department }}
+                    {{ form.date_of_birth }}
+                    {{ form.salary }}
+                </div>
+
+                <div class="buttons empl_buttons">
+                    <div><input class="button empl_button add_button" type="submit" value="Save"></div>
+                    <div class="button empl_button cancel_button"><a href="../" class="button">Back</a></div>
+                </div>
+            </div>
+        </form>
+        <span>{{ error }}</span>
+        {% endblock %}
+    </div>
+</div>

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/department_styles.css' %}" />
+{% endblock %}
+
+{% block add_button %}
+<div class="add_button_department">
+    <a href="new/" class="button add_button">Add</a>
+</div>
+   
+{% endblock %}
+
+{% block table %}
+<div class="table">
+    <table class="table_head">
+        <tr class="row">
+            <td class="clmn_class clmn_id">Id</td>
+            <td class="clmn_class clmn_department">Department</td>
+            <td class="clmn_class clmn_employees_num">Employees Number</td>
+            <td class="clmn_class clmn_average_salary">Average Salary</td>
+            <td class="clmn_class clmn_button"></td>
+            <td class="clmn_class clmn_button"></td>
+        </tr>
+    </table>
+    
+    <table class="departments_table">
+        {% for item in items %}
+        <tr class="row">
+            <td class="clmn_class clmn_id">{{forloop.counter}}</td>
+            <td class="clmn_class clmn_department">{{item.department_name}}</td>
+            <td class="clmn_class clmn_employees_num">{{item.employees_number}}</td>
+            <td class="clmn_class clmn_average_salary">{{item.average_salary}}</td>
+            <td class="clmn_class clmn_button"></td>
+            <td class="clmn_class clmn_button"></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
+
+
+
+{% endblock %}

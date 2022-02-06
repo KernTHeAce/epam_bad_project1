@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Departments</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/common_styles.css' %}" />
+    {% block css %}
+    
+    {% endblock %}
+
+    {% if count >= 9 %}
+        <link rel="stylesheet" href="{% static 'css/full_table_styles.css' %}" />
+    {% else %}
+    <link rel="stylesheet" href="{% static 'css/not_full_table_styles.css' %}" />
+    {% endif %}
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=monzerat:500,600,700">
+</head>
+
+
+<body>
+
+    {% block content %}
+    
+    {% endblock %}
+    
+
+    <script type="text/javascript">     setTimeout(function() {         $('input').attr('autocomplete', 'off');     }, 2000); </script>
+</body>
+</html>

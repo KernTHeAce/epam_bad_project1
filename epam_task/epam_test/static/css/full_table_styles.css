@@ -1,0 +1,8 @@
+.table {
+    border-bottom: 2px solid;
+}
+
+.row:last-child {
+    border-bottom: 0px;
+}
+

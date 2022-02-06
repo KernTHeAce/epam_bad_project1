@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+    <div class="wrapper">
+        <div class="header">
+            <div class="top-menu">
+                <a href="/department/"><div class="department">DEPARTMENTS</div></a>
+                <a href="/employee/"><div class="employee">EMPLOYEES</div></a>
+            </div>
+
+            <div class="title">
+                <p>Test Task</p>
+            </div>
+
+                {% block add_button %}
+
+                {% endblock %}
+
+            
+
+        </div>
+
+        <div class="content">
+            {% block table %}
+            {% endblock%}
+        </div>
+    </div>
+{% endblock %}

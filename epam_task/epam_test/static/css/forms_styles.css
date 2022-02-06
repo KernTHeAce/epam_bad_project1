@@ -1,0 +1,98 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="date" i]{
+    font-family: 'Montserrat';
+}
+
+.empl {
+    margin: 132px 0 0 0;
+}
+
+.dep {
+    margin: 240px 0 0 0;
+}
+
+.form {
+    position: relative;
+    width: 890px;
+    border: 2px solid #E0FBFC;
+}
+
+form:focus {
+    outline: none;
+    border: none;
+}
+
+.form_input {
+    outline: none;
+    color: #E0FBFC;
+    font-size: 24px;
+    background-color: #293241;
+    border: 2px solid #E0FBFC;
+    width: 434px;
+    margin: 30px 0 0 0;
+    padding: 27px 20px 25px 20px;
+}
+
+.form_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    margin: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+} 
+
+.form_label {
+    padding:0 0 10px 5px;
+    margin: 0 163px 0px 163px;
+}
+
+.title{
+    padding: 0 30px;
+    background-color: #293241;
+    top: -32px;
+    position:absolute;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+ display: none;
+}
+
+.button {
+    width: 180px;
+}
+
+.empl_buttons {
+    display:flex;
+    margin: 69px 0 85px 0;
+}
+
+.empl_button.cancel_button {
+    width: 146px;
+    background-color: #3D5A80;
+}
+
+.empl_button.add_button {
+    margin: 0 40px 0 0;
+}
+
+.dep_button.cancel_button {
+    width: 146px;
+    margin: 33px 0 80px 0;
+    background-color: #3D5A80;
+}
+
+.dep_button.add_button {
+    margin: 59px 0 0 0;
+}
+

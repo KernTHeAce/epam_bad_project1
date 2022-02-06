@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/employee_styles.css' %}" />
+{% endblock %}
+
+{% block add_button %}
+    
+    <div class="button_group">
+
+        <a href="filter/" class="filter_button button">Filter</a>
+        <a href="find/" class="find_button button">Find</a>
+        <a href="new/" class="add_button button">Add</a>
+
+    </div>
+{% endblock %}
+
+{% block ff_button %}
+    
+{% endblock %}
+
+{% block table %}
+<div class="table">
+    <table class="table_head">
+        <tr>
+            <td class="clmn_class clmn_id">Id</td>
+            <td class="clmn_class clmn_name">Name</td>
+            <td class="clmn_class clmn_department">Department</td>
+            <td class="clmn_class clmn_birth_date">Birth Date</td>
+            <td class="clmn_class clmn_salary">Salary</td>
+            <td class="clmn_class clmn_button"></td>
+            <td class="clmn_class clmn_button"></td>
+        </tr>
+    </table>
+    
+    <table class="employees_table">
+        {% for item in items %}
+        <tr class="row">
+            <td class="clmn_class clmn_id">{{forloop.counter}}</td>
+            <td class="clmn_class clmn_name">{{item.name}}</td>
+            <td class="clmn_class clmn_department">{{item.department}}</td>
+            <td class="clmn_class clmn_birth_date">{{item.date_of_birth}}</td>
+            <td class="clmn_class clmn_salary">{{item.salary}}</td>
+            <td class="clmn_class clmn_button"></td>
+            <td class="clmn_class clmn_button"></td>
+            
+            
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

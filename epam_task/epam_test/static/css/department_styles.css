@@ -1,0 +1,30 @@
+.department {
+    background-color: rgba(152, 193, 217, 0.30);
+}
+
+.add_button_department {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.departments_table {
+    height: 628px;
+    display: block;
+    overflow: auto;
+}
+
+.clmn_id {
+    width: 165px;
+}
+
+.clmn_department {
+    width: 655px;
+}
+
+.clmn_employees_num {
+    width: 305px;
+}
+
+.clmn_average_salary {
+    width: 429px;
+}
